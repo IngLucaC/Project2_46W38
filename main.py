@@ -131,6 +131,7 @@ plt.title(
 plt.grid(True, linestyle="--", alpha=0.5)
 plt.legend(fontsize=12, loc="upper left", ncol=2)
 plt.tight_layout()
+plt.savefig("Figure_1.jpeg", dpi=200)
 plt.show()
 
 # 9. Plot wind speed + displacements in subplots
@@ -162,8 +163,5 @@ axs[1].grid(True, linestyle="--", alpha=0.6)
 axs[1].legend(fontsize=10)
 
 plt.tight_layout()
+plt.savefig("Figure_2.jpeg", dpi=200)
 plt.show()
-
-
-# np.savetxt(summary_file, summary_data, header=header, comments="")
-# print(f"Saved summary for TI={TI} to {summary_file}")
